@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22C5ED931DA5AE68000AC40A /* ImageLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C5ED921DA5AE68000AC40A /* ImageLoader.framework */; };
+		22C5ED941DA5AE68000AC40A /* ImageLoader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22C5ED921DA5AE68000AC40A /* ImageLoader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6578B7341A5BE1FE008D85D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D6FBA81A03855700CF1DB7 /* LaunchScreen.xib */; };
 		659D34AB1AD7A2B800FEFABC /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659D34AA1AD7A2B800FEFABC /* CollectionViewController.swift */; };
 		65AB21F71A5BE3C1007E6D40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D6FBA31A03855700CF1DB7 /* Main.storyboard */; };
@@ -26,7 +28,22 @@
 		A1EE65CC1A41F9DF00BEA147 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE65CB1A41F9DF00BEA147 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		22C5ED951DA5AE68000AC40A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				22C5ED941DA5AE68000AC40A /* ImageLoader.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		22C5ED921DA5AE68000AC40A /* ImageLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = ImageLoader.framework; path = "/Users/equipomobile2/Library/Developer/Xcode/DerivedData/ImageLoader-dmpnuuarzbgnrdafjriqwwvnywzz/Build/Products/Release-iphoneos/ImageLoader.framework"; sourceTree = "<absolute>"; };
 		659D34AA1AD7A2B800FEFABC /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		65D6FB9A1A03855700CF1DB7 /* ImageLoaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageLoaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D6FB9E1A03855700CF1DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A125B14D1A5F620B00250601 /* ImageLoader.framework in Frameworks */,
+				22C5ED931DA5AE68000AC40A /* ImageLoader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +81,7 @@
 		65D6FB911A03855700CF1DB7 = {
 			isa = PBXGroup;
 			children = (
+				22C5ED921DA5AE68000AC40A /* ImageLoader.framework */,
 				A125B14C1A5F620B00250601 /* ImageLoader.framework */,
 				65D6FB9C1A03855700CF1DB7 /* ImageLoaderExample */,
 				65D6FB9B1A03855700CF1DB7 /* Products */,
@@ -143,6 +162,7 @@
 				65D6FB961A03855700CF1DB7 /* Sources */,
 				65D6FB971A03855700CF1DB7 /* Frameworks */,
 				65D6FB981A03855700CF1DB7 /* Resources */,
+				22C5ED951DA5AE68000AC40A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

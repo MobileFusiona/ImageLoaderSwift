@@ -1,0 +1,12 @@
+//
+//  module.modulemap
+//  ImageLoader
+//
+//  Created by EquipoMobile2 on 05-10-16.
+//  Copyright © 2016 Hirohisa Kawasaki. All rights reserved.
+//
+
+module CCommonCrypto {
+    header "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/CommonCrypto/CommonCrypto.h"
+    export *
+}
