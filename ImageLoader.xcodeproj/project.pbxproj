@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22D5FE331DAFDF5E00F12444 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 225373B21DAFD88A00C73120 /* module.modulemap */; };
 		650F993C1C0DA09B00540E8D /* DiskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650F993B1C0DA09B00540E8D /* DiskTests.swift */; };
 		650F99401C0DBD5B00540E8D /* ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650F993F1C0DBD5B00540E8D /* ManagerTests.swift */; };
 		650F99421C0EC16E00540E8D /* UIImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650F99411C0EC16E00540E8D /* UIImageViewTests.swift */; };
@@ -286,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D5FE331DAFDF5E00F12444 /* module.modulemap in Sources */,
 				A17327831A45D793000D10E0 /* Disk.swift in Sources */,
 				65677D061C0EF4F300120684 /* UIImageView+ImageLoader.swift in Sources */,
 				65B4D1DD1CD6FD9600D4A4C8 /* Loader.swift in Sources */,
