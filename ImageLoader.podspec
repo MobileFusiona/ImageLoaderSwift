@@ -18,7 +18,10 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
   s.xcconfig = {
-    'SWIFT_VERSION' => '3.0'
+    'SWIFT_VERSION' => '3.0',
+    'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/ImageLoader/ImageLoader/CCommonCrypto'
   }
+  s.preserve_paths = 'ImageLoader/CCommonCrypto/module.modulemap'
+
 
 end
