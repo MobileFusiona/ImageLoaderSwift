@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import CCommonCrypto
+
 
 extension String {
 
@@ -89,8 +91,20 @@ extension Disk {
     }
 
     fileprivate func _path(_ name: String) -> String {
-        return directory.path + "/" + name
+        //return directory.path + "/" + name
+        return directory.path + "/" + sha1(name)
+
     }
+
+    func sha1(name : String) -> String {
+        let data = name.dataUsingEncoding(NSUTF8StringEncoding)!
+        var digest = [UInt8](count:Int(CC_SHA1_DIGEST_LENGTH), repeatedValue: 0)
+        CC_SHA1(data.bytes, CC_LONG(data.length), &digest)
+        let hexBytes = digest.map { String(format: "%02hhx", $0) }
+        return hexBytes.joinWithSeparator("")
+
+    }
+
 
     public func set(_ anObject: Data, forKey aKey: String) {
         storedData[aKey] = anObject
