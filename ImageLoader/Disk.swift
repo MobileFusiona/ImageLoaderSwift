@@ -92,16 +92,18 @@ extension Disk {
 
     fileprivate func _path(_ name: String) -> String {
         //return directory.path + "/" + name
-        return directory.path + "/" + sha1(name)
+        return directory.path + "/" + sha1(name: name)
 
     }
 
     func sha1(name : String) -> String {
-        let data = name.dataUsingEncoding(NSUTF8StringEncoding)!
-        var digest = [UInt8](count:Int(CC_SHA1_DIGEST_LENGTH), repeatedValue: 0)
-        CC_SHA1(data.bytes, CC_LONG(data.length), &digest)
+        let data = name.data(using: String.Encoding.utf8)!
+        var digest = [UInt8](repeating: 0, count:Int(CC_SHA1_DIGEST_LENGTH))
+        data.withUnsafeBytes {
+            _ = CC_SHA1($0, CC_LONG(data.count), &digest)
+        }
         let hexBytes = digest.map { String(format: "%02hhx", $0) }
-        return hexBytes.joinWithSeparator("")
+        return hexBytes.joined()
 
     }
 

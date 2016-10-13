@@ -27,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		225373B31DAFDA1D00C73120 /* ImageLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ImageLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		659D34AA1AD7A2B800FEFABC /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CollectionViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		65D6FB9A1A03855700CF1DB7 /* ImageLoaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageLoaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D6FB9E1A03855700CF1DB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		65D6FB911A03855700CF1DB7 = {
 			isa = PBXGroup;
 			children = (
+				225373B31DAFDA1D00C73120 /* ImageLoader.framework */,
 				A125B14C1A5F620B00250601 /* ImageLoader.framework */,
 				65D6FB9C1A03855700CF1DB7 /* ImageLoaderExample */,
 				65D6FB9B1A03855700CF1DB7 /* Products */,
@@ -334,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ImageLoaderExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -347,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ImageLoaderExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
